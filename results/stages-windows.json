@@ -1,0 +1,70 @@
+{
+  "source": "results/stages-timeline.json.gz",
+  "time_origin": "2026-11-18T22:11:12.278707+08:00",
+  "method": "30-second windows and 10-second ramp-down windows relative to first completed HTTP request; linear percentile interpolation",
+  "windows": [
+    {
+      "from_s": 0,
+      "to_s": 30,
+      "observed_vu_min": 1,
+      "observed_vu_max": 4,
+      "requests": 71,
+      "throughput_rps": 2.3666666666666667,
+      "p95_ms": 101.824
+    },
+    {
+      "from_s": 30,
+      "to_s": 60,
+      "observed_vu_min": 5,
+      "observed_vu_max": 17,
+      "requests": 299,
+      "throughput_rps": 9.966666666666667,
+      "p95_ms": 101.68623
+    },
+    {
+      "from_s": 60,
+      "to_s": 90,
+      "observed_vu_min": 17,
+      "observed_vu_max": 29,
+      "requests": 640,
+      "throughput_rps": 21.333333333333332,
+      "p95_ms": 101.75332499999999
+    },
+    {
+      "from_s": 90,
+      "to_s": 120,
+      "observed_vu_min": 32,
+      "observed_vu_max": 99,
+      "requests": 1757,
+      "throughput_rps": 58.56666666666667,
+      "p95_ms": 210.08131999999998
+    },
+    {
+      "from_s": 120,
+      "to_s": 130,
+      "observed_vu_min": 69,
+      "observed_vu_max": 99,
+      "requests": 736,
+      "throughput_rps": 73.6,
+      "p95_ms": 263.225425
+    },
+    {
+      "from_s": 130,
+      "to_s": 140,
+      "observed_vu_min": 35,
+      "observed_vu_max": 66,
+      "requests": 461,
+      "throughput_rps": 46.1,
+      "p95_ms": 101.6493
+    },
+    {
+      "from_s": 140,
+      "to_s": 150.414512,
+      "observed_vu_min": 3,
+      "observed_vu_max": 32,
+      "requests": 154,
+      "throughput_rps": 14.787058673512496,
+      "p95_ms": 101.476385
+    }
+  ]
+}
