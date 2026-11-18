@@ -1,0 +1,31 @@
+time="2026-11-18T21:57:42+08:00" level=info msg="Request:\nGET / HTTP/1.1\nHost: test.k6.io\nUser-Agent: Grafana k6/2.4.0\nAccept-Encoding: gzip\n\n\n" group= iter=0 request_id=d495e21b-19ae-4d8f-a39e-4835baeb5dbd scenario=default source=http-debug vu=1
+time="2026-11-18T21:57:43+08:00" level=info msg="Response:\nHTTP/2.0 302 Found\nDate: Wed, 18 Nov 2026 13:57:42 GMT\nLocation: https://quickpizza.grafana.com/\nServer: CloudFront\nVia: 1.1 f65f5d3201a8df94e8f50260b484ae68.cloudfront.net (CloudFront)\nX-Amz-Cf-Id: 55J9Lh1kY-6X4S2WSMGlUTjGklzvhBXqe-xT3T7sx7ZF-oylSyAaYg==\nX-Amz-Cf-Pop: HKG54-P2\nX-Cache: FunctionGeneratedResponse from cloudfront\nContent-Length: 0\n\n\n" group= iter=0 request_id=d495e21b-19ae-4d8f-a39e-4835baeb5dbd scenario=default source=http-debug vu=1
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 1       0.763882/s
+    checks_succeeded...: 0.00%   0 out of 1
+    checks_failed......: 100.00% 1 out of 1
+
+    ✗ status is 200
+      ↳  0% — ✓ 0 / ✗ 1
+
+    HTTP
+    http_req_duration..............: avg=60.32ms   min=60.32ms   med=60.32ms   max=60.32ms   p(90)=60.32ms   p(95)=60.32ms   p(99)=60.32ms  
+      { expected_response:true }...: avg=60.32ms   min=60.32ms   med=60.32ms   max=60.32ms   p(90)=60.32ms   p(95)=60.32ms   p(99)=60.32ms  
+    http_req_failed................: 0.00%  0 out of 1
+    http_reqs......................: 1      0.763882/s
+
+    EXECUTION
+    iteration_duration.............: avg=1309.10ms min=1309.10ms med=1309.10ms max=1309.10ms p(90)=1309.10ms p(95)=1309.10ms p(99)=1309.10ms
+    iterations.....................: 1      0.763882/s
+    vus............................: 1      min=1      max=1
+    vus_max........................: 1      min=1      max=1
+
+    NETWORK
+    data_received..................: 5.9 kB 4.5 kB/s
+    data_sent......................: 1.8 kB 1.3 kB/s
+
+
+

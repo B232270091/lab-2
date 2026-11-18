@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-11-18T22:04:10+08:00",
+  "finished_at": "2026-11-18T22:05:11+08:00",
+  "target": "http://127.0.0.1:8000/slow",
+  "command": [
+    "k6",
+    "run",
+    "--no-color",
+    "--quiet",
+    "--no-usage-report",
+    "--summary-time-unit",
+    "ms",
+    "--summary-export",
+    "results/run-slo-pass.json",
+    "-e",
+    "TARGET_URL=http://127.0.0.1:8000/slow",
+    "thresholds.js"
+  ],
+  "exit_code": 0,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.14.8"
+}

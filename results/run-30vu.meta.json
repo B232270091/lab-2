@@ -1,0 +1,26 @@
+{
+  "started_at": "2026-11-18T21:58:30+08:00",
+  "finished_at": "2026-11-18T21:59:31+08:00",
+  "target": "http://127.0.0.1:8000/slow",
+  "command": [
+    "k6",
+    "run",
+    "--no-color",
+    "--quiet",
+    "--no-usage-report",
+    "--summary-time-unit",
+    "ms",
+    "--summary-export",
+    "results/run-30vu.json",
+    "-e",
+    "TARGET_URL=http://127.0.0.1:8000/slow",
+    "--vus",
+    "30",
+    "--duration",
+    "1m",
+    "script.js"
+  ],
+  "exit_code": 0,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.14.8"
+}

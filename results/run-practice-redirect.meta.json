@@ -1,0 +1,27 @@
+{
+  "started_at": "2026-11-18T21:57:42+08:00",
+  "finished_at": "2026-11-18T21:57:44+08:00",
+  "target": "https://test.k6.io",
+  "command": [
+    "k6",
+    "run",
+    "--no-color",
+    "--quiet",
+    "--no-usage-report",
+    "--summary-time-unit",
+    "ms",
+    "--summary-export",
+    "results/run-practice-redirect.json",
+    "-e",
+    "TARGET_URL=https://test.k6.io",
+    "--vus",
+    "1",
+    "--iterations",
+    "1",
+    "--http-debug",
+    "script.js"
+  ],
+  "exit_code": 0,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_version": "3.14.8"
+}

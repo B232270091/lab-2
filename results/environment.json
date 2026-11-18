@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-11-18T22:08:43+08:00",
+  "os": "Windows-11-10.0.26300-SP0",
+  "architecture": "AMD64",
+  "logical_cpus": 12,
+  "python": "3.14.8",
+  "k6": "k6.exe v2.4.0 (commit/dd9395906d, go1.26.11, windows/amd64)",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8000,
+    "concurrent_workers": 8,
+    "slow_delay_ms": 100,
+    "fast_delay_ms": 0
+  },
+  "iteration_sleep_seconds": 1
+}
